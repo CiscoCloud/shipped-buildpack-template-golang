@@ -8,7 +8,7 @@ script:
 publish:
   docker:
     dockerfile: ./Dockerfile
-    docker_host: 173.39.228.207:2375
+    docker_host: 173.37.40.202:2375
     docker_version: 1.4.1
     registry_login: true
     username: npateriyainsecure
