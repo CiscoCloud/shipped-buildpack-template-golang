@@ -1,4 +1,4 @@
-image: golang:onbuild
+image: go1.3
 git:
   path: https://github.com/CiscoCloud/golang-hello-world
 script:
