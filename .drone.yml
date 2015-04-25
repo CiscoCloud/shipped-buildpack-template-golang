@@ -17,3 +17,8 @@ publish:
     image_name: npateriyainsecure/golang-hello-world
     push_latest: true
     tag: $DRONE_COMMIT
+notify:
+  webhook:
+    urls:
+      - "http://shipped-api.shipped-cisco.com/webhooks/drone"
+    on_success: true
