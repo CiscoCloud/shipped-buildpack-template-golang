@@ -1,0 +1,19 @@
+image: golang:onbuild
+git:
+  path: https://github.com/CiscoCloud/golang-hello-world
+script:
+  - echo "build commands"
+  - echo "no build command"
+  - echo "no test command"
+publish:
+  docker:
+    dockerfile: ./Dockerfile
+    docker_host: 173.39.228.207:2375
+    docker_version: 1.4.1
+    registry_login: true
+    username: npateriyainsecure
+    password: githubpassword
+    email: npateriya@yahoo.com
+    image_name: npateriyainsecure/golang-hello-world
+    push_latest: true
+    tag: $DRONE_COMMIT
